@@ -1,0 +1,5 @@
+# Generated files
+target/
+
+# The Cargo.lock file should be included in the repository if you're writing an executable, and should be ignored if you're writing a library.
+Cargo.lock

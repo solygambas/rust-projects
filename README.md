@@ -16,6 +16,7 @@ A simple to-do list app.
 
 ### Features
 
--
+- installing Rustup, [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=matklad.rust-analyzer) and [Even Better TOML](https://marketplace.visualstudio.com/items?itemName=tamasfe.even-better-toml).
+- setting up a project with Cargo.
 
 Based on [Rust Crash Course](https://www.youtube.com/watch?v=zF34dRivLOw) by Brad Traversy (2019).
