@@ -10,4 +10,8 @@ pub fn run() {
     println!("{name} likes to play {activity}", name = "John", activity= "Baseball");
     // Placeholder traits
     println!("Binary: {:b} Hex: {:x} Octal: {:o}", 10, 10, 10); // 1010, a, 12
+    // Placeholder for debug trait
+    println!("{:?}", (12, true, "hello"));
+    // Basic math
+    println!("10 + 10 = {}", 10 + 10);
 }
