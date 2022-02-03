@@ -8,7 +8,8 @@
 // mod conditionals;
 // mod loops;
 // mod functions;
-mod pointer_ref;
+// mod pointer_ref;
+mod structs;
 
 fn main() {
     // println!("Hello World!")
@@ -22,5 +23,6 @@ fn main() {
     // conditionals::run()
     // loops::run()
     // functions::run()
-    pointer_ref::run()
+    // pointer_ref::run()
+    structs::run()
 }
