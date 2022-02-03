@@ -2,17 +2,11 @@
 
 A small project to understand Rust core concepts.
 
-<!-- ## Task Tracker
+## Hello Cargo
 
-A simple to-do list app.
+A quick intro to Rust syntax.
 
-[See 01-task-tracker folder](https://github.com/solygambas/angular-projects/tree/main/01-task-tracker)
-
-<p align="center">
-    <a href="https://github.com/solygambas/angular-projects/tree/main/01-task-tracker">
-        <img src="01-task-tracker/screenshot.png">
-    </a>
-</p> -->
+[See 01-hello-cargo folder](https://github.com/solygambas/rust-projects/tree/main/01-hello-cargo)
 
 ### Features
 
@@ -22,5 +16,10 @@ A simple to-do list app.
 - handling variables.
 - discovering primitive types.
 - playing with strings, tuples, arrays and vectors.
+- rendering conditionals.
+- using loops, functions and pointer references.
+- creating custom data types with structs.
+- defining enums.
+- grabbing args from CLI.
 
 Based on [Rust Crash Course](https://www.youtube.com/watch?v=zF34dRivLOw) by Brad Traversy (2019).
