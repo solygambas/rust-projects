@@ -1,7 +1,9 @@
 // mod basics;
-mod references;
+// mod references;
+mod slices;
 
 fn main() {
     // basics::run();
-    references::run();
+    // references::run();
+    slices::run();
 }
