@@ -1,5 +1,9 @@
-mod basics;
+// mod basics;
+// mod rectangles;
+mod method;
 
 fn main() {
-    basics::run();
+    // basics::run();
+    // rectangles::run();
+    method::run();
 }
