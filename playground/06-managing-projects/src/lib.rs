@@ -1,16 +1,4 @@
-mod front_of_house {
-    pub mod hosting {
-        // let front_of_house refers to it
-        pub fn add_to_waitlist() {} // let hosting refers to it
-                                    // fn seat_at_table() {}
-    }
-
-    // mod serving {
-    //     fn take_order() {}
-    //     fn serve_order() {}
-    //     fn take_payment() {}
-    // }
-}
+mod front_of_house;
 
 // pub fn eat_at_restaurant() {
 //     // Absolute path
@@ -37,7 +25,7 @@ mod back_of_house {
     impl Breakfast {
         pub fn summer(toast: &str) -> Breakfast {
             Breakfast {
-                pub toast: String::from(toast),
+                toast: String::from(toast),
                 seasonal_fruit: String::from("peaches"),
             }
         }
@@ -49,14 +37,43 @@ mod back_of_house {
     }
 }
 
-pub fn eat_at_restaurant() {
-    // Order a breakfast
-    let mut meal = back_of_house::Breakfast::summer("Rye");
-    // Change your mind
-    meal.toast = String::from("Wheat");
-    println!("I'd like {} toast please", meal.toast);
-    // enum
-    let order1 = back_of_house::Appetizer::Soup;
-    let order1 = back_of_house::Appetizer::Salad;
+// pub fn eat_at_restaurant() {
+//     // Order a breakfast
+//     let mut meal = back_of_house::Breakfast::summer("Rye");
+//     // Change your mind
+//     meal.toast = String::from("Wheat");
+//     println!("I'd like {} toast please", meal.toast);
+//     // enum
+//     let order1 = back_of_house::Appetizer::Soup;
+//     let order1 = back_of_house::Appetizer::Salad;
 
+// }
+
+// use keyword
+use crate::front_of_house::hosting;
+// use self::front_of_house::hosting;
+
+// full path for structs, enums, etc.
+use std::collections::HashMap;
+
+// as
+use std::io::Result as IoResult;
+
+// re-exporting
+// pub use crate::back_of_house::Breakfast;
+
+// external package
+use rand::Rng;
+
+// nested paths
+// use std::{cmp::Ordering, io};
+use std::io::{self, Write};
+
+// glob operator
+use std::collections::*;
+
+pub fn eat_at_restaurant() {
+    hosting::add_to_waitlist();
+    let mut map = HashMap::new();
+    map.insert(1, 2);
 }
