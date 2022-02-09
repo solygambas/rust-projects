@@ -1,5 +1,7 @@
-mod vectors;
+// mod vectors;
+mod strings;
 
 fn main() {
-    vectors::run();
+    // vectors::run();
+    strings::run();
 }
