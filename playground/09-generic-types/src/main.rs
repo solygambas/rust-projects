@@ -1,9 +1,9 @@
-// mod duplicate;
+mod duplicate;
 // mod generic_data_types;
-mod traits;
+// mod traits;
 
 fn main() {
-    // duplicate::run();
+    duplicate::run();
     // generic_data_types::run();
-    traits::run();
+    // traits::run();
 }

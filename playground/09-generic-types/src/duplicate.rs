@@ -1,4 +1,5 @@
-fn largest(list: &[i32]) -> i32 {
+fn largest<T: PartialOrd + Copy>(list: &[T]) -> T {
+    // types like i32 and char that have a known size can be stored on the stack, so they implement the Copy trait
     let mut largest = list[0];
     for &item in list {
         if item > largest {
