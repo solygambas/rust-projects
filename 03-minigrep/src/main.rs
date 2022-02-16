@@ -1,3 +1,5 @@
+// cargo run to poem.txt > output.txt // redirect output to a file
+
 use std::env;
 use std::process;
 
@@ -14,14 +16,15 @@ fn main() {
     // }
 
     let config = Config::new(&args).unwrap_or_else(|err| {
-        println!("Problem parsing arguments: {}", err);
+        eprintln!("Problem parsing arguments: {}", err);
+        // Write error messages to standard error instead of standard output
         process::exit(1);
     });
     // println!("Searching for {}", config.query);
     // println!("In file {}", config.filename);
 
     if let Err(e) = minigrep::run(config) {
-        println!("Application error: {}", e);
+        eprintln!("Application error: {}", e);
         process::exit(1);
     }
 }
