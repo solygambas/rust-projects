@@ -1,5 +1,10 @@
 // cargo new 10-automated-tests --name=automated_tests --lib
 // cargo test
+// cargo test -- --test-threads=1 // will take longer, but the tests won't interfere with each other
+// cargo test -- --show-output // see printed values for passing tests as well
+// cargo test one_hundred // pass the name of any test function to cargo test to run only that test
+// cargo test add // Filtering to Run Multiple Tests, 2 tests are prefixed with add
+// cargo test -- --ignored // run only the ignored test
 
 // #[derive(Debug)]
 // struct Rectangle {
@@ -14,10 +19,10 @@
 //     }
 // }
 
-// pub fn add_two(a: i32) -> i32 {
-//     // a + 2
-//     a + 3
-// }
+pub fn add_two(a: i32) -> i32 {
+    a + 2
+    // a + 3
+}
 
 // pub fn greeting(name: &str) -> String {
 //     // format!("Hello {}!", name)
@@ -132,12 +137,35 @@ mod tests {
     // }
 
     // Using Result<T, E> in Tests
+    // #[test]
+    // fn it_works() -> Result<(), String> {
+    //     if 2 + 2 == 4 {
+    //         Ok(())
+    //     } else {
+    //         Err(String::from("two plus two does not equal four"))
+    //     }
+    // }
+
+    // Running Single Tests
     #[test]
-    fn it_works() -> Result<(), String> {
-        if 2 + 2 == 4 {
-            Ok(())
-        } else {
-            Err(String::from("two plus two does not equal four"))
-        }
+    fn add_two_and_two() {
+        assert_eq!(4, add_two(2));
+    }
+
+    #[test]
+    fn add_three_and_two() {
+        assert_eq!(5, add_two(3));
+    }
+
+    #[test]
+    fn one_hundred() {
+        assert_eq!(102, add_two(100));
+    }
+
+    // Ignoring Some Tests Unless Specifically Requested
+    #[test]
+    #[ignore]
+    fn expensive_test() {
+        // code that takes an hour to run
     }
 }
