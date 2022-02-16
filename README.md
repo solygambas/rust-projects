@@ -1,9 +1,10 @@
 # Rust Projects
 
-This repo is made of 2 projects:
+This repo is made of 3 projects:
 
 1. [**Hello Cargo**](#hellocargo): A quick intro to Rust syntax.
 2. [**Guessing Game**](#guessing): A hands-on introduction to the Rust language.
+3. [**Minigrep**](#minigrep): A simple version of the classic command line tool grep.
 
 ## <a name="hellocargo"></a> 1) Hello Cargo
 
@@ -42,5 +43,18 @@ A hands-on introduction to the Rust language.
 - allowing multiple guesses with looping.
 - quitting after a correct guess.
 - handling invalid input.
+
+Based on [The Rust Programming Language](https://doc.rust-lang.org/book/) by Steve Klabnik and Carol Nichols (2021).
+
+## <a name="minigrep"></a> 3) Minigrep
+
+A simple version of the classic command line tool grep.
+
+[See 03-minigrep folder](https://github.com/solygambas/rust-projects/tree/main/03-minigrep)
+
+### Features
+
+- accepting command line arguments.
+- reading a file.
 
 Based on [The Rust Programming Language](https://doc.rust-lang.org/book/) by Steve Klabnik and Carol Nichols (2021).
