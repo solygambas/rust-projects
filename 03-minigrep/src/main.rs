@@ -6,7 +6,7 @@ use std::process;
 use minigrep::Config;
 
 fn main() {
-    let args: Vec<String> = env::args().collect();
+    // let args: Vec<String> = env::args().collect();
     // println!("{:?}", args); // ["target\\debug\\minigrep.exe", "needle", "haystack"]
     // let query = &args[1];
     // let filename = &args[2];
@@ -15,7 +15,8 @@ fn main() {
     //     panic!("not enough arguments");
     // }
 
-    let config = Config::new(&args).unwrap_or_else(|err| {
+    // let config = Config::new(&args).unwrap_or_else(|err| {
+    let config = Config::new(env::args()).unwrap_or_else(|err| {
         eprintln!("Problem parsing arguments: {}", err);
         // Write error messages to standard error instead of standard output
         process::exit(1);
