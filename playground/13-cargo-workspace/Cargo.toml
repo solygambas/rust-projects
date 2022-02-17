@@ -1,3 +1,6 @@
+# cargo install ripgrep # to install a binary globally
+# cargo --list # see all the available commands
+
 [workspace]
 
 members = [
