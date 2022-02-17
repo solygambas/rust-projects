@@ -1,5 +1,7 @@
-mod closures;
+// mod closures;
+mod iterators;
 
 fn main() {
-    closures::run();
+    // closures::run();
+    iterators::run();
 }
