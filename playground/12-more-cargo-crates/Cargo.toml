@@ -1,0 +1,19 @@
+[package]
+name = "cargo_crates"
+version = "0.1.0"
+edition = "2021"
+description = "A fun game where you guess what number the computer has chosen."
+license = "MIT OR Apache-2.0"
+
+# cargo publish 
+# cargo yank --vers 1.0.1 to remove a version
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+[profile.dev]
+# opt-level = 0 # by default
+opt-level = 1 # override
+
+[profile.release]
+opt-level = 3 # by default
