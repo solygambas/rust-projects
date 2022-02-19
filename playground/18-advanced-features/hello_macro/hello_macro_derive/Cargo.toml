@@ -1,0 +1,13 @@
+# procedural macros need to be in their own crate. 
+
+[package]
+name = "hello_macro_derive"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = "1.0"
+quote = "1.0"
