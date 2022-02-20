@@ -3,12 +3,6 @@ mod utils;
 use std::fmt;
 use wasm_bindgen::prelude::*;
 
-// When the `wee_alloc` feature is enabled, use `wee_alloc` as the global
-// allocator.
-#[cfg(feature = "wee_alloc")]
-#[global_allocator]
-static ALLOC: wee_alloc::WeeAlloc = wee_alloc::WeeAlloc::INIT;
-
 #[wasm_bindgen]
 #[repr(u8)]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
@@ -37,8 +31,8 @@ impl Universe {
                     continue;
                 }
                 let neighbor_row = (row + delta_row) % self.height;
-                let neighbor_column = (column + delta_col) % self.width;
-                let idx = self.get_index(neighbor_row, neighbor_column);
+                let neighbor_col = (column + delta_col) % self.width;
+                let idx = self.get_index(neighbor_row, neighbor_col);
                 count += self.cells[idx] as u8;
             }
         }
