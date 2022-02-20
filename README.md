@@ -1,11 +1,12 @@
 # Rust Projects
 
-This repo is made of 4 projects:
+This repo is made of 5 projects:
 
 1. [**Hello Cargo**](#hellocargo): A quick intro to Rust syntax.
 2. [**Guessing Game**](#guessing): A hands-on introduction to the Rust language.
 3. [**Minigrep**](#minigrep): A simple version of the classic command line tool grep.
 4. [**Hello**](#hello): A multithreaded web server that says “hello”.
+5. [**Game of Life**](#life): A zero-player game to learn how to use Rust, WebAssembly, and JavaScript together.
 
 ## <a name="hellocargo"></a> 1) Hello Cargo
 
@@ -81,3 +82,18 @@ A multithreaded web server that says “hello”.
 - handling graceful shutdown.
 
 Based on [The Rust Programming Language](https://doc.rust-lang.org/book/) by Steve Klabnik and Carol Nichols (2021).
+
+## <a name="life"></a> 5) Game of Life
+
+A zero-player game to learn how to use Rust, WebAssembly, and JavaScript together.
+
+[See 05-game-of-life folder](https://github.com/solygambas/rust-projects/tree/main/05-game-of-life)
+
+### Features
+
+- cloning the project template and understanding the folder structure.
+- building the project with wasm-pack.
+- putting it into a web page with wasm-app.
+- serving locally with webpack.
+
+Based on [The Rust and WebAssembly Book](https://rustwasm.github.io/docs/book/) by The Rust and WebAssembly Working Group (2021).
