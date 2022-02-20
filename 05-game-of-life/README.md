@@ -8,5 +8,6 @@ A zero-player game to learn how to use Rust, WebAssembly, and JavaScript togethe
 - building the project with wasm-pack.
 - putting it into a web page with wasm-app.
 - serving locally with webpack.
+- implementing the Game of Life in Rust.
 
 Based on [The Rust and WebAssembly Book](https://rustwasm.github.io/docs/book/) by The Rust and WebAssembly Working Group (2021).
