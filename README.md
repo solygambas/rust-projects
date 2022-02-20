@@ -89,6 +89,12 @@ A zero-player game to learn how to use Rust, WebAssembly, and JavaScript togethe
 
 [See 05-game-of-life folder](https://github.com/solygambas/rust-projects/tree/main/05-game-of-life)
 
+<p align="center">
+    <a href="https://github.com/solygambas/rust-projects/tree/main/05-game-of-life">
+        <img src="05-game-of-life/screenshot.png">
+    </a>
+</p>
+
 ### Features
 
 - cloning the project template and understanding the folder structure.
@@ -96,6 +102,6 @@ A zero-player game to learn how to use Rust, WebAssembly, and JavaScript togethe
 - putting it into a web page with wasm-app.
 - serving locally with webpack.
 - implementing the Game of Life with Rust.
-- rendering with JavaScript.
+- rendering to canvas directly from memory with JavaScript.
 
 Based on [The Rust and WebAssembly Book](https://rustwasm.github.io/docs/book/) by The Rust and WebAssembly Working Group (2021).
