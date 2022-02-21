@@ -104,5 +104,7 @@ A zero-player game to learn how to use Rust, WebAssembly, and JavaScript togethe
 - implementing the Game of Life with Rust.
 - rendering to canvas directly from memory with JavaScript.
 - testing the tick function and debugging.
+- pausing and resuming the game.
+- toggling a cell's state on click.
 
 Based on [The Rust and WebAssembly Book](https://rustwasm.github.io/docs/book/) by The Rust and WebAssembly Working Group (2021).

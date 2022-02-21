@@ -3,14 +3,14 @@ mod utils;
 use std::fmt;
 use wasm_bindgen::prelude::*;
 extern crate js_sys;
-extern crate web_sys;
+// extern crate web_sys;
 
 // A macro to provide `println!(..)`-style syntax for `console.log` logging.
-macro_rules! log {
-    ($( $t:tt)* ) => {
-        web_sys::console::log_1(&format!( $( $t )*).into());
-    };
-}
+// macro_rules! log {
+//     ($( $t:tt)* ) => {
+//         web_sys::console::log_1(&format!( $( $t )*).into());
+//     };
+// }
 
 #[wasm_bindgen]
 #[repr(u8)]
@@ -18,6 +18,15 @@ macro_rules! log {
 pub enum Cell {
     Dead = 0,
     Alive = 1,
+}
+
+impl Cell {
+    fn toggle(&mut self) {
+        *self = match *self {
+            Cell::Dead => Cell::Alive,
+            Cell::Alive => Cell::Dead,
+        }
+    }
 }
 
 #[wasm_bindgen]
@@ -74,13 +83,13 @@ impl Universe {
                 let cell = self.cells[idx];
                 let live_neighbors = self.live_neighbor_count(row, col);
 
-                log!(
-                    "cell[{}, {}] is initially {:?} and has {} live neighbors",
-                    row,
-                    col,
-                    cell,
-                    live_neighbors
-                );
+                // log!(
+                //     "cell[{}, {}] is initially {:?} and has {} live neighbors",
+                //     row,
+                //     col,
+                //     cell,
+                //     live_neighbors
+                // );
 
                 let next_cell = match (cell, live_neighbors) {
                     // Rule 1: Any live cell with fewer than two live neighbours
@@ -99,7 +108,7 @@ impl Universe {
                     (otherwise, _) => otherwise,
                 };
 
-                log!("it becomes {:?}", next_cell);
+                // log!("it becomes {:?}", next_cell);
 
                 next[idx] = next_cell;
             }
@@ -159,6 +168,11 @@ impl Universe {
     pub fn set_height(&mut self, height: u32) {
         self.height = height;
         self.cells = (0..self.width * height).map(|_i| Cell::Dead).collect();
+    }
+
+    pub fn toggle_cell(&mut self, row: u32, col: u32) {
+        let idx = self.get_index(row, col);
+        self.cells[idx].toggle();
     }
 }
 
