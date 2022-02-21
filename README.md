@@ -107,5 +107,6 @@ A zero-player game to learn how to use Rust, WebAssembly, and JavaScript togethe
 - pausing and resuming the game.
 - toggling a cell's state on click.
 - optimizing performances with time profiling and benchmarking.
+- shrinking .wasm size with wasm-opt and gzip.
 
 Based on [The Rust and WebAssembly Book](https://rustwasm.github.io/docs/book/) by The Rust and WebAssembly Working Group (2021).

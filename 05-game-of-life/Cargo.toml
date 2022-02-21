@@ -42,4 +42,11 @@ features = [
 
 [profile.release]
 # Tell `rustc` to optimize for small code size.
-opt-level = "s"
+# opt-level = "s" # 37143
+lto = true
+opt-level = "z" # wasm-opt -Oz # https://rustwasm.github.io/book/reference/code-size.html#use-the-wasm-opt-tool
+# gzip -9 < pkg/game_of_life_bg.wasm | wc -c
+
+# publish
+# wasm-pack login
+# wasm-pack publish
