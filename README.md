@@ -106,5 +106,6 @@ A zero-player game to learn how to use Rust, WebAssembly, and JavaScript togethe
 - testing the tick function and debugging.
 - pausing and resuming the game.
 - toggling a cell's state on click.
+- optimizing performances with time profiling and benchmarking.
 
 Based on [The Rust and WebAssembly Book](https://rustwasm.github.io/docs/book/) by The Rust and WebAssembly Working Group (2021).
