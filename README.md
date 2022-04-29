@@ -1,12 +1,14 @@
 # Rust Projects
 
-This repo is made of 5 projects:
+5 small projects to understand Rust core concepts.
 
-1. [**Hello Cargo**](#hellocargo): A quick intro to Rust syntax.
-2. [**Guessing Game**](#guessing): A hands-on introduction to the Rust language.
-3. [**Minigrep**](#minigrep): A simple version of the classic command line tool grep.
-4. [**Hello**](#hello): A multithreaded web server that says “hello”.
-5. [**Game of Life**](#life): A zero-player game to learn how to use Rust, WebAssembly, and JavaScript together.
+| #   | Project                           | Description                                           |
+| --- | --------------------------------- | ----------------------------------------------------- |
+| 01  | [**Hello Cargo**](#hellocargo) | A quick intro to Rust syntax.               |
+| 02  | [**Guessing Game**](#guessing)        | A hands-on introduction to the Rust language.           |
+| 03  | [**Minigrep**](#minigrep)     | A simple version of the classic command line tool grep.                                 |
+| 04  | [**Smog Test**](#smogtest)    | A multithreaded web server that says “hello”.                     |
+| 05  | [**Game of Life**](#life)          | A zero-player game to learn how to use Rust, WebAssembly, and JavaScript together.                  |
 
 ## <a name="hellocargo"></a> 1) Hello Cargo
 
