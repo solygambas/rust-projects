@@ -7,7 +7,7 @@
 | 01  | [**Hello Cargo**](#hellocargo) | A quick intro to Rust syntax.               |
 | 02  | [**Guessing Game**](#guessing)        | A hands-on introduction to the Rust language.           |
 | 03  | [**Minigrep**](#minigrep)     | A simple version of the classic command line tool grep.                                 |
-| 04  | [**Smog Test**](#smogtest)    | A multithreaded web server that says “hello”.                     |
+| 04  | [**Hello**](#hello)    | A multithreaded web server that says “hello”.                     |
 | 05  | [**Game of Life**](#life)          | A zero-player game to learn how to use Rust, WebAssembly, and JavaScript together.                  |
 
 ## <a name="hellocargo"></a> 1) Hello Cargo
