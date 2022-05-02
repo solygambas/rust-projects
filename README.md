@@ -2,19 +2,19 @@
 
 5 small projects to understand Rust core concepts.
 
-| #   | Project                           | Description                                           |
-| --- | --------------------------------- | ----------------------------------------------------- |
-| 01  | [**Hello Cargo**](#hellocargo) | A quick intro to Rust syntax.               |
-| 02  | [**Guessing Game**](#guessing)        | A hands-on introduction to the Rust language.           |
-| 03  | [**Minigrep**](#minigrep)     | A simple version of the classic command line tool grep.                                 |
-| 04  | [**Hello**](#hello)    | A multithreaded web server that says “hello”.                     |
-| 05  | [**Game of Life**](#life)          | A zero-player game to learn how to use Rust, WebAssembly, and JavaScript together.                  |
+| #   | Project                        | Description                                                                        |
+| --- | ------------------------------ | ---------------------------------------------------------------------------------- |
+| 01  | [**Hello Cargo**](#hellocargo) | A quick intro to Rust syntax.                                                      |
+| 02  | [**Guessing Game**](#guessing) | A hands-on introduction to the Rust language.                                      |
+| 03  | [**Minigrep**](#minigrep)      | A simple version of the classic command line tool grep.                            |
+| 04  | [**Hello**](#hello)            | A multithreaded web server that says “hello”.                                      |
+| 05  | [**Game of Life**](#life)      | A zero-player game to learn how to use Rust, WebAssembly, and JavaScript together. |
 
 ## <a name="hellocargo"></a> 1) Hello Cargo
 
 A quick intro to Rust syntax.
 
-[See 01-hello-cargo folder](https://github.com/solygambas/rust-projects/tree/main/01-hello-cargo)
+[See 01-hello-cargo folder](01-hello-cargo)
 
 ### Features
 
@@ -36,7 +36,7 @@ Based on [Rust Crash Course](https://www.youtube.com/watch?v=zF34dRivLOw) by Bra
 
 A hands-on introduction to the Rust language.
 
-[See 02-guessing-game folder](https://github.com/solygambas/rust-projects/tree/main/02-guessing-game)
+[See 02-guessing-game folder](02-guessing-game)
 
 ### Features
 
@@ -54,7 +54,7 @@ Based on [The Rust Programming Language](https://doc.rust-lang.org/book/) by Ste
 
 A simple version of the classic command line tool grep.
 
-[See 03-minigrep folder](https://github.com/solygambas/rust-projects/tree/main/03-minigrep)
+[See 03-minigrep folder](03-minigrep)
 
 ### Features
 
@@ -72,7 +72,7 @@ Based on [The Rust Programming Language](https://doc.rust-lang.org/book/) by Ste
 
 A multithreaded web server that says “hello”.
 
-[See 04-hello folder](https://github.com/solygambas/rust-projects/tree/main/04-hello)
+[See 04-hello folder](04-hello)
 
 ### Features
 
@@ -89,10 +89,10 @@ Based on [The Rust Programming Language](https://doc.rust-lang.org/book/) by Ste
 
 A zero-player game to learn how to use Rust, WebAssembly, and JavaScript together.
 
-[See 05-game-of-life folder](https://github.com/solygambas/rust-projects/tree/main/05-game-of-life)
+[See 05-game-of-life folder](05-game-of-life)
 
 <p align="center">
-    <a href="https://github.com/solygambas/rust-projects/tree/main/05-game-of-life">
+    <a href="05-game-of-life">
         <img src="05-game-of-life/screenshot.png">
     </a>
 </p>
