@@ -10,6 +10,10 @@
 | 04  | [**Hello**](#hello)            | A multithreaded web server that says “hello”.                                      |
 | 05  | [**Game of Life**](#life)      | A zero-player game to learn how to use Rust, WebAssembly, and JavaScript together. |
 
+## Get Inspired
+
+Check out our [**collection of articles**](https://www.onbusinessplan.com/) for those beginning their Rust journey. Find tips, tricks, and motivational content to keep you engaged and motivated throughout your learning process.
+
 ## <a name="hellocargo"></a> 1) Hello Cargo
 
 A quick intro to Rust syntax.
@@ -30,8 +34,6 @@ A quick intro to Rust syntax.
 - defining enums.
 - grabbing args from CLI.
 
-Based on [Rust Crash Course](https://www.youtube.com/watch?v=zF34dRivLOw) by Brad Traversy (2019).
-
 ## <a name="guessing"></a> 2) Guessing Game
 
 A hands-on introduction to the Rust language.
@@ -47,8 +49,6 @@ A hands-on introduction to the Rust language.
 - allowing multiple guesses with looping.
 - quitting after a correct guess.
 - handling invalid input.
-
-Based on [The Rust Programming Language](https://doc.rust-lang.org/book/) by Steve Klabnik and Carol Nichols (2021).
 
 ## <a name="minigrep"></a> 3) Minigrep
 
@@ -66,8 +66,6 @@ A simple version of the classic command line tool grep.
 - writing error messages to standard error instead of standard output.
 - using closures and iterators.
 
-Based on [The Rust Programming Language](https://doc.rust-lang.org/book/) by Steve Klabnik and Carol Nichols (2021).
-
 ## <a name="hello"></a> 4) Hello
 
 A multithreaded web server that says “hello”.
@@ -82,8 +80,6 @@ A multithreaded web server that says “hello”.
 - simulating a slow request.
 - improving throughput with a thread pool.
 - handling graceful shutdown.
-
-Based on [The Rust Programming Language](https://doc.rust-lang.org/book/) by Steve Klabnik and Carol Nichols (2021).
 
 ## <a name="life"></a> 5) Game of Life
 
@@ -111,4 +107,14 @@ A zero-player game to learn how to use Rust, WebAssembly, and JavaScript togethe
 - optimizing performances with time profiling and benchmarking.
 - shrinking .wasm size with wasm-opt and gzip.
 
-Based on [The Rust and WebAssembly Book](https://rustwasm.github.io/docs/book/) by The Rust and WebAssembly Working Group (2021).
+## Acknowledgments
+
+These projects are adapted from various sources:
+
+- [Rust Crash Course](https://www.youtube.com/watch?v=zF34dRivLOw) by Brad Traversy (2019)
+- [The Rust Programming Language](https://doc.rust-lang.org/book/) by Steve Klabnik and Carol Nichols (2021)
+- [The Rust and WebAssembly Book](https://rustwasm.github.io/docs/book/) by The Rust and WebAssembly Working Group (2021)
+
+## Show Your Support
+
+If you find these projects helpful or interesting, please consider starring the repository. It's a simple gesture that helps to boost the visibility of the project and show appreciation for the effort put into creating it. Additionally, if you'd like to support my work further, you can [**become a sponsor**](https://github.com/sponsors/solygambas). Your support is greatly appreciated. Thank you!
